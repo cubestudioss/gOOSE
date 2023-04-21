@@ -1,6 +1,6 @@
 REM     Title: Browser-Data
 
-REM     Author: I am Jakoby
+REM     Author: I am Jakoby and Cube Studios
 
 REM     Description: This payload will grab your targets brosing history and bookmarks from IE, Chrome, Firefox, and Opera GX.
 
